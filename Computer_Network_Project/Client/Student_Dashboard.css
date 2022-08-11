@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'navbar section section section section section section section section section';
+}
+nav{
+    grid-area: navbar;
+    background-color: #0d4877;
+    width: 5%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+}
+nav ul .list{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 45px;
+    padding: 0px 10px;
+    margin: 30px 5px;
+    list-style: none;
+    cursor: pointer;
+}
+nav ul .list a{
+    align-self: center;
+}
+nav ul #list-1 img{
+    margin: 15px 5px;
+    padding: 0px 10px;
+    height: 25px;
+    width: 35px;
+}
+nav ul .list a img{
+    height: 25px;
+    width: 35px;
+}
+nav ul .list p{
+    visibility: hidden;
+    align-self: center;
+    color: white;
+    font-size: 20px;
+}
+nav ul .list:hover{
+    width: 250px;
+    background-color: rgb(0, 140, 255);
+}
+
+
+
+/* Section */
+section{
+    z-index: -1;
+    grid-area: section;
+    background-color: #e3eef5;
+    position: absolute;
+    right: 0px;
+    width: 95%;
+
+    display: grid;
+    grid-gap: 1rem;
+}
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+.logo img{
+    height: 70px;
+}
+.logo .right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.logo .right a{
+    border: 2px solid black;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 140, 255);
+    padding: 12px;
+}
+.profile{
+    padding: 10px 40px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    background-color: white;
+}
+.profile img{
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.profile input[type='button']{
+    width: 130px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    align-self: flex-start;
+    color: white;
+    background-color: rgb(0, 140, 255);
+}
+.profile input[type='button']:hover{
+    background-color: rgb(25, 82, 129);
+    cursor: pointer;
+}
+.courses{
+    padding: 20px;
+    background-color: white;
+}
+.courses span{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px;
+    border-radius: 5px;
+}
+.courses .subjects{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.courses .subjects .subject{
+    background-color: rgb(125, 10, 255);
+    height: 200px;
+}
+.courses .subjects .subject p{
+    color: white;
+    margin: 7px;
+    font-size: 20px;
+    text-align: left;
+}
+.courses .subjects .subject #Crs{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Contact us */
+#Contact_us{
+    background-color: #003A62;
+}
+#Contact_us .container{
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+}
+#Contact_us .container h1{
+    color: white;
+    font-size: 35px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#Contact_us .container .cont p{
+    color: white;
+    line-height: 20px;
+}
+#Contact_us .copy_right{
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+
+/* hr */
+hr{
+    border: 5px solid orange;
+}

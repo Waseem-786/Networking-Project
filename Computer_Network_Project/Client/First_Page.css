@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    padding: 20px 0px;
+}
+
+.left {
+    text-align: center;
+    align-self: center;
+}
+.left span{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    animation: travel 3s ease-in-out infinite 0s;
+
+}
+@keyframes travel {
+    0%
+    {
+        left: 80px;
+    }
+    25%
+    {
+        left: -80px;
+    }
+    100%
+    {
+        left: 80px;
+    }  
+}
+
+.mid {
+    text-align: center;
+    align-self: center;
+}
+
+.mid ul {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1.7fr;
+}
+
+.right {
+    text-align: center;
+    align-self: center;
+}
+
+.list,#button{
+    list-style: none;
+    font-size: 25px;
+}
+.list a,#button{
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+.list a:hover,#button:hover {
+    font-size: 35px;
+    color: rgb(0 125 234);
+    cursor: pointer;
+}
+
+.navbar .right #button {
+    text-align: right;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background: rgb(0 125 234);
+    transition: all ease-in-out 0.5s;
+}
+.navbar .right #button:hover{
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+header::before {
+    content: "";
+    background: url('/DB_Project/Images/background_image.jpg') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* Position absolute is set */
+    width: 100vw;
+    height: 200vh;
+    background-size: cover;
+    background-attachment: fixed;
+    /* It is used to set image under the content */
+    z-index: -1;
+}
+header{
+    height: 447.5px;
+    display: grid;
+    align-items: center;
+}
+header .text{
+    text-align: center;
+    font-weight: bold;
+}
+header .heading{
+    font-size: 60px;
+}
+
+
+/* About us */
+
+#After_Home{
+    position: relative;
+    top: 79px;
+    background-color: orange;
+    border: 5px solid orange;
+}
+#About_us{
+    position: relative;
+    top: 79px;
+    padding: 10px 50px;
+    background-color: white;
+}
+#About_us #main_heading{
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#About_us .overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#About_us .sub_heading{
+    color: blue;
+    text-decoration: underline;
+}
+#About_us .overview .text span{
+    color: grey;
+    line-height: 200%;
+    width: 40%;
+}
+
+#About_us img{
+    padding: 0px 0px 0px 60px;
+    width: 60%;
+    height: auto;
+}
+
+/* Team */
+#After_About_us{
+    position: relative;
+    top: 79px;
+    background-color: orange;
+    border: 5px solid orange;
+}
+#Team{
+    position: relative;
+    top: 79px;
+    padding: 10px 50px;
+    background-color: black;
+}
+#Team h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    background-color: turquoise;
+}
+
+#Team .container{
+    background-color: black;
+    padding: 10px 30px;
+    height: 40%;
+}
+#Team .container .row{
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+#Team .container .row .team_member{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+#Team .container .row .team_member .pic{
+    align-self: center;
+    height: 40%;
+    width: 43%;
+    padding: 10px;
+    transition: all ease-in-out 0.5s;
+}
+#Team .container .row .team_member .pic:hover{
+    background-color: turquoise;
+    border-radius: 50%;
+    
+}
+#Team .container .row .team_member .pic img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#Team .container .row .team_member .name{
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+#Team .container .row .team_member .working{
+    margin-top: 5px;
+    text-align: center;
+    color: turquoise;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Team .container .row .team_member ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#Team .container .row .team_member ul li{
+    list-style: none;
+}
+#Team .container .row .team_member ul li a img{
+    width: 70%;
+    height: 70%;
+    transition: all ease-in-out 0.5s;
+}
+#Team .container .row .team_member ul li a img:hover{
+    border-radius: 50%;
+    background-color: turquoise;
+}
+@media only screen and (max-width: 1000px){
+    #Team .container .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    #Team .container .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
+#After_Team{
+    position: relative;
+    top: 69px;
+    background-color: orange;
+    border: 5px solid orange;
+}
+/* Contact us */
+#Contact_us{
+    position: relative;
+    top: 69px;
+    padding: 10px 50px;
+    background-color: #003A62;
+}
+#Contact_us .container{
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+#Contact_us .container h1{
+    font-size: 35px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#Contact_us .container .cont p{
+    line-height: 20px;
+}
+#Contact_us .copy_right{
+    text-align: center;
+    margin: 10px 0px;
+}

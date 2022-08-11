@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    height: 100%;
+    width: 100vw;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(98, 131, 221), red);
+}
+
+.container{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(4 251 251),rgb(198 209 26));
+    width: 40%;
+    padding: 30px;
+}
+h1{
+    font-weight: bold;
+}
+hr{
+    margin-top: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#button{
+    width: 40%;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#button:hover{
+    background-image: linear-gradient(to right, rgb(231, 156, 156) , rgb(27, 134, 235));
+}
+.input{
+    font-size: 15px;
+    height: 30px;
+    width: 60%;
+    background-color: #fbff08;
+}
+#account{
+    color: blue;
+}

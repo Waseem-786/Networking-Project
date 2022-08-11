@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: fit-content;
+    height: 100vh;
+    background-color: rgb(157, 154, 212);
+}
+.container form{
+    display: grid;
+    height: 100vh;
+}
+.container form h1{
+    text-align: center;
+    color: brown;
+}
+.container form .main{
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container form .main .members{
+    padding: 3px;
+    display: grid;
+    grid-gap: 1rem;
+    list-style: none;
+}
+
+.container form .main .members .profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: darkorange;
+    padding: 10px;
+}
+.container form .main .members .profile .name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.container form .main .members .profile #search{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+.container form .main .members .friends{
+    height: 430px;
+    overflow-y: auto;
+}
+.container form .main .members .friends .friend{
+    text-align: start;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 25px;
+    width: 447px;
+    background-color: rgb(62, 233, 62);
+    cursor: pointer;
+}
+.container form .main #Chat_Page{
+    display: grid;
+    visibility: hidden;
+}
+.container form .main .chat .write{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-end;
+}
+.container form .main .chat .write label{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.container form .main .chat .write .message{
+    height: 30px;
+    width: 500px;
+}
+.container form .main .chat .write .send{
+    height: 30px;
+    width: 120px;
+    justify-self: end;
+    align-self: flex-end;
+    background-color: rgb(62, 233, 62);
+    cursor: pointer;
+}
+.container form .main .chat .page{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.4rem;
+    overflow-y: auto;
+    height: 470px;
+    align-content: flex-start;
+}
+.container form .main .chat .page .mine,.container form .main .chat .page .other{
+    list-style: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 350px;
+    height: 22px;
+}
+.container form .main .chat .other_name{
+    width: auto;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container form .main .chat .page .mine{
+    justify-self: end;
+    background-color: rgb(62, 233, 62);
+}
+.container form .main .chat .page .other{
+    background-color: burlywood;
+}
+hr{
+    height: 1px;
+    color: white;
+}
